@@ -47,7 +47,7 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
         countRender: function(count) {
             console.log("countRender");
             console.log(count);
-            this.ui.count.text(count);
+            this.ui.count.text("現在"+count+"人が観覧中");
         },
 		/* on render callback */
 		onRender: function() {}

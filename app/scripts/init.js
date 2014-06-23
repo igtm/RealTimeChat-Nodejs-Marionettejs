@@ -45,7 +45,7 @@ require.config({
         json2: '../bower_components/require-handlebars-plugin/hbs/json2',
         hbs: '../bower_components/require-handlebars-plugin/hbs',
 
-        socketIO: "http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"
+        socketio: "//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min"
     },
 
     hbs: {

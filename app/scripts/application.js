@@ -2,10 +2,11 @@ define([
 	'backbone',
 	'communicator',
     'views/composite/TalkCompositeView',
-    'collections/TalkCollection'
+    'collections/TalkCollection',
+    'socketio'
 ],
 
-function( Backbone, Communicator, TalkCompositeView, TalkCollection ) {
+function( Backbone, Communicator, TalkCompositeView, TalkCollection, io ) {
     'use strict';
 
 	var App = new Backbone.Marionette.Application();
@@ -21,9 +22,9 @@ function( Backbone, Communicator, TalkCompositeView, TalkCollection ) {
         App.container.show(new TalkCompositeView({collection: TalkColl }));
 
         /* socket.io  */
-        var s = io.connect();
+        var s = io.connect("http://localhost:3000");
         s.on("count", function(count){
-            Communicator.command.execute("COUNT:RENDER",count);
+            Communicator.command.execute("COUNT:RENDER",count.count);
         });
 	});
 
