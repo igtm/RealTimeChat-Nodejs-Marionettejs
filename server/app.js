@@ -16,7 +16,7 @@ app.configure(function(){
     app.set('port', process.env.PORT || 3000);
 
     app.set('view engine', 'handlebars');
-    app.set('views', __dirname + '../app/scripts/views');
+    app.set('views', __dirname + '../dist/scripts/views');
 });
 
 // set logging
@@ -26,13 +26,13 @@ app.use(function(req, res, next){
 });
 
 // mount static
-app.use(express.static( path.join( __dirname, '../app') ));
+app.use(express.static( path.join( __dirname, '../dist') ));
 app.use(express.static( path.join( __dirname, '../.tmp') ));
 
 
 // route index.html
 app.get('/', function(req, res){
-  res.sendfile( path.join( __dirname, '../app/index.html' ) );
+  res.sendfile( path.join( __dirname, '../dist/index.html' ) );
 });
 
 // start server
