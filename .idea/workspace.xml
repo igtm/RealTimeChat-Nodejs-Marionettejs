@@ -444,7 +444,11 @@
       <created>1403536355980</created>
       <updated>1403536355980</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="merge?">
+      <created>1403537054504</created>
+      <updated>1403537054504</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -488,7 +492,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="test Procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="test Procfile" />
+    <MESSAGE value="merge?" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
