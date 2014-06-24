@@ -41,7 +41,7 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
             var text = this.ui.input.val();
             console.log(text);
             this.ui.input.val("");
-            this.collection.set(new TalkModel({talk: text}));
+            this.collection.add(({talk: text}));
             Communicator.command.execute("TALK:EMIT",text); // 投稿送信
             console.log("talk:toServer");
         },

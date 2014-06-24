@@ -23,6 +23,7 @@ function( Backbone, Communicator, TalkCompositeView, TalkCollection, io ) {
 
         /* socket.io  */
         var s = io.connect();
+     // var s = io.connect('http://localhost:3000'); //ローカル
         s.on("count", function(data){
             Communicator.command.execute("COUNT:RENDER",data.count);
         });
