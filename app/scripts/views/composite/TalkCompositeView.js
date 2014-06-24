@@ -52,7 +52,7 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
         },
         talkRender: function(talk){
             console.log(talk);
-            this.collection.set(new TalkModel({talk: text}));
+            this.collection.add({talk: talk});
             console.log("talkRender");
         },
 		/* on render callback */

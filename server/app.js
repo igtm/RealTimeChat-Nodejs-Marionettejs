@@ -41,7 +41,7 @@ var server = http.createServer(app).listen(app.get('port'), function(){
 });
 
 var io = socketIO.listen(server);
-io.configure(function () {
+io.configure(function () { // herokuには必要な設定。これせんとめっちゃ遅くなる。
     io.set("transports", ["xhr-polling"]);
     io.set("polling duration", 10);
 });
