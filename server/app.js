@@ -47,9 +47,12 @@ io.sockets.on("connection", function(socket){
     users++;
     io.sockets.emit("count",{ count: users});
 
+    socket.on("talk:toServer", function(data){ // 投稿送信
+        socket.broadcast.emit("talk:toClient",{talk:data.talk});
+    });
 
 
-   socket.on("disconnect", function(){
+   socket.on("disconnect", function(){ // 切断時
        users--;
        socket.broadcast.emit("count",{ count: users});
    });

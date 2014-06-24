@@ -22,10 +22,17 @@ function( Backbone, Communicator, TalkCompositeView, TalkCollection, io ) {
         App.container.show(new TalkCompositeView({collection: TalkColl }));
 
         /* socket.io  */
-        var s = io.connect("http://localhost:3000");
-        s.on("count", function(count){
-            Communicator.command.execute("COUNT:RENDER",count.count);
+        var s = io.connect();
+        s.on("count", function(data){
+            Communicator.command.execute("COUNT:RENDER",data.count);
         });
+        s.on("talk:toClient", function(data){
+           Communicator.command.execute("TALK:RENDER", data.talk); //未実装
+        });
+        Communicator.command.setHandler("TALK:EMIT",function(talk){
+            s.emit("talk:toServer",{talk: talk});
+        },this);
+
 	});
 
 	return App;
