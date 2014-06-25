@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="356e7add-6bd0-4dd7-bed6-b01263e464e1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/views/composite/TalkCompositeView.js" afterPath="$PROJECT_DIR$/app/scripts/views/composite/TalkCompositeView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/application.js" afterPath="$PROJECT_DIR$/app/scripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,8 +48,8 @@
       <file leaf-file-name="TalkCompositeView.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/views/composite/TalkCompositeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.785877" vertical-offset="465" max-vertical-offset="1065">
-              <caret line="8" column="17" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.58441556" vertical-offset="480" max-vertical-offset="1050">
+              <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -70,7 +68,7 @@
       <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
+            <state vertical-scroll-proportion="-0.6122449" vertical-offset="0" max-vertical-offset="150">
               <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
               <folding />
             </state>
@@ -101,8 +99,8 @@
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/templates/composite/TalkCompositeView_tmpl.hbs" />
         <option value="$PROJECT_DIR$/server/app.js" />
-        <option value="$PROJECT_DIR$/app/scripts/views/composite/TalkCompositeView.js" />
         <option value="$PROJECT_DIR$/app/scripts/application.js" />
+        <option value="$PROJECT_DIR$/app/scripts/views/composite/TalkCompositeView.js" />
       </list>
     </option>
   </component>
@@ -365,7 +363,7 @@
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40433672" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2767857" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33403805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -756,14 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/views/item/TalkItemView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
@@ -780,6 +770,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6122449" vertical-offset="0" max-vertical-offset="150">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="690">
@@ -790,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/views/composite/TalkCompositeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.785877" vertical-offset="465" max-vertical-offset="1065">
-          <caret line="8" column="17" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.58441556" vertical-offset="480" max-vertical-offset="1050">
+          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
           <folding />
         </state>
       </provider>
