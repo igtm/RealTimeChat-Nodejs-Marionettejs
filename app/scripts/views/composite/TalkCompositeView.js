@@ -45,11 +45,11 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
         },
 
         onPost: function(){
-            if(this.ui.input.val() === ''){return;} // ''
-            console.log(this.ui.input.val());
-            var model = new TalkModel({talk: this.ui.input.val()});
-            this.collection.add(model);
-            Communicator.command.execute("TALK:EMIT",this.ui.input.val()); // 投稿送信
+            var talk = this.ui.input.val();
+            if(talk === ''){return;} // ''
+            console.log(talk);
+            this.collection.add({talk: talk});
+            Communicator.command.execute("TALK:EMIT",talk); // 投稿送信
             this.ui.input.val("");
             console.log("talk:toServer");
         },
@@ -60,8 +60,7 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
         },
         talkRender: function(talk){
             console.log(talk);
-            var model = new TalkModel({talk: talk});
-            this.collection.add(model);
+            this.collection.add({talk: talk});
             console.log("talkRender");
         },
 		/* on render callback */
