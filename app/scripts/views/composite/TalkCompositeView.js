@@ -60,5 +60,4 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 		/* on render callback */
 		onRender: function() {}
 	});
-
 });
