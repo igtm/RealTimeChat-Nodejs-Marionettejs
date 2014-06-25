@@ -37,6 +37,13 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
             "click #enter": "onPost"
         },
 
+        collectionEvents: {
+          "add": "test"
+        },
+        test: function(){
+          console.log("コレクショｎがaddeventをはいた！");
+        },
+
         onPost: function(){
             if(this.ui.input.val() === ''){return;} // ''
             console.log(this.ui.input.val());
