@@ -39,11 +39,12 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 
         onPost: function(){
             var talk = this.ui.input.val();
+            if(talk === ''){return;} // ''
             console.log(talk);
-            this.ui.input.val("");
             var model = new TalkModel({talk: talk});
             this.collection.add(model);
             Communicator.command.execute("TALK:EMIT",talk); // 投稿送信
+            this.ui.input.val("");
             console.log("talk:toServer");
         },
         countRender: function(count) {

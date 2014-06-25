@@ -18,8 +18,8 @@ function( Backbone, Communicator, TalkCompositeView, TalkCollection, io ) {
 
 	/* Add initializers here */
 	App.addInitializer( function () {
-        var TalkColl = new TalkCollection();
-        App.container.show(new TalkCompositeView({collection: TalkColl }));
+        this.TalkColl = new TalkCollection();
+        App.container.show(new TalkCompositeView({collection: this.TalkColl }));
 
         /* socket.io  */
         var s = io.connect();
