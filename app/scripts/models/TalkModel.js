@@ -11,10 +11,7 @@ function( Backbone ) {
 		},
 
 		defaults: {
-            id: "",
-            name: "",
-            talk: "",
-            created: ""
+            talk: ""
         },
 
     });
