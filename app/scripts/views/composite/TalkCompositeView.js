@@ -34,17 +34,11 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 
 		/* Ui events hash */
 		events: {
-            "click #enter": "onPost"
+            "click #enter": "onPost",
+            "keypress #input": "onPost"
         },
-
-        collectionEvents: {
-          "add": "test"
-        },
-        test: function(){
-          console.log("コレクショｎがaddeventをはいた！");
-        },
-
-        onPost: function(){
+        onPost: function(e){
+            if(e.keypress === 13){return;}
             var talk = this.ui.input.val();
             if(talk === ''){return;} // ''
             console.log(talk);
@@ -54,8 +48,7 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
             console.log("talk:toServer");
         },
         countRender: function(count) {
-            console.log("countRender");
-            console.log(count);
+            console.log(count+"人");
             this.ui.count.text("現在"+count+"人が観覧中");
         },
         talkRender: function(talk){
