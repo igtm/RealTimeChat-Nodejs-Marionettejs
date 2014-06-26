@@ -11,7 +11,8 @@ function( Backbone ) {
 		},
 
 		defaults: {
-            talk: ""
+            talk: "",
+            "created": ""
         },
 
     });

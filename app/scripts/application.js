@@ -18,6 +18,9 @@ function( Backbone, Communicator, TalkCompositeView, TalkCollection, io ) {
 
 	/* Add initializers here */
 	App.addInitializer( function () {
+        var func = function(view){App.container.show(view);}
+        Communicator.command.setHandler("SET:VIEW",func,this);
+
 
         /* socket.io  */
         var s = io.connect();
