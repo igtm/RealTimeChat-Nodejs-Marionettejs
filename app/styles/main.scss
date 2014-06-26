@@ -5,6 +5,7 @@
 }
 #inputarea {
   bottom: 0;
+  z-index: 10;
   line-height: 2;
   position: fixed;
   width:100%;
@@ -41,7 +42,7 @@
 #audience li:last-child {
   border-bottom: 0px;
 }
-// marquee //
+// marquee chromeで使えないから保留 //
 .marquee {
   overflow:-webkit-marquee;
   white-space:nowrap;

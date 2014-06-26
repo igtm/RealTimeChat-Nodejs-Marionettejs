@@ -14,10 +14,7 @@ function( Backbone, TalkitemviewTmpl  ) {
 		
     	template: TalkitemviewTmpl,
 
-        tagName: "li",
-
-        className: "marquee",
-        
+        tagName: "marquee",
 
     	/* ui selector cache */
     	ui: {
