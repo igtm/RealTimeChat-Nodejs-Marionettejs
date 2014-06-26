@@ -16,6 +16,10 @@ function( Backbone, TalkitemviewTmpl  ) {
 
         tagName: "marquee",
 
+        attributes: {
+          "loop": "1"
+        },
+
     	/* ui selector cache */
     	ui: {
         },
