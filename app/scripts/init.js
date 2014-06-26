@@ -17,6 +17,10 @@ require.config({
         bootstrap: {
             deps: ['jquery'],
             exports: 'jquery'
+        },
+        "jquery.marquee": {
+            deps: ["jquery"],
+            exports: "jquery"
         }
     },
 
@@ -45,7 +49,8 @@ require.config({
         json2: '../bower_components/require-handlebars-plugin/hbs/json2',
         hbs: '../bower_components/require-handlebars-plugin/hbs',
 
-        socketio: "//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min"
+        socketio: "//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min",
+        "jquery.marquee": "//cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min"
     },
 
     hbs: {

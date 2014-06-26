@@ -5,7 +5,8 @@
 }
 #inputarea {
   bottom: 0;
-  position: absolute;
+  line-height: 2;
+  position: fixed;
   width:100%;
   background: rgb(202,202,202);
 }
@@ -39,4 +40,11 @@
 }
 #audience li:last-child {
   border-bottom: 0px;
+}
+// marquee //
+.marquee {
+  overflow:-webkit-marquee;
+  white-space:nowrap;
+  -webkit-marquee-speed:fast;
+  -webkit-marquee-repetition: 1;
 }

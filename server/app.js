@@ -34,14 +34,6 @@ app.use(express.static( path.join( __dirname, '../.tmp') ));
 app.get('/', function(req, res){
   res.sendfile( path.join( __dirname, '../dist/index.html' ) );
 });
-// route index.html
-app.get('/audience', function(req, res){
-  res.sendfile( path.join( __dirname, '../dist/index.html' ) );
-});
-// route index.html
-app.get('/presenter', function(req, res){
-  res.sendfile( path.join( __dirname, '../dist/index.html' ) );
-});
 
 // start server
 var server = http.createServer(app).listen(app.get('port'), function(){
