@@ -3,10 +3,12 @@ define([
 	'communicator',
     'views/composite/TalkCompositeView',
     'collections/TalkCollection',
+    'controllers/Controller',
+    'routers/Router',
     'socketio'
 ],
 
-function( Backbone, Communicator, TalkCompositeView, TalkCollection, io ) {
+function( Backbone, Communicator, TalkCompositeView, TalkCollection,Controller,Router,  io ) {
     'use strict';
 
 	var App = new Backbone.Marionette.Application();
@@ -21,6 +23,8 @@ function( Backbone, Communicator, TalkCompositeView, TalkCollection, io ) {
         var func = function(view){App.container.show(view);}
         Communicator.command.setHandler("SET:VIEW",func,this);
 
+        new Router({controller: new RouterController()});
+        Backbone.history.start();
 
         /* socket.io  */
         var s = io.connect();
