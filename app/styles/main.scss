@@ -13,3 +13,30 @@
   margin-left: 3%;
   margin-top: 1%;
 }
+
+// Audience Lists //
+#audience {
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 10px 0 100px;
+}
+#audience li {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  border-bottom:  1px solid rgb(227,227,227);
+
+  display: block;
+  position: relative;
+  z-index: 10;
+  height: 46px;
+  padding: 0px 5% 0px 5%;
+  background: rgb(255,255,255);
+  font-size: 14px;
+}
+#audience li:last-child {
+  border-bottom: 0px;
+}

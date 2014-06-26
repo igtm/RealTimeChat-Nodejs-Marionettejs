@@ -24,8 +24,6 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 
     	/* ui selector cache */
     	ui: {
-            enter: "#enter",
-            input: "#input",
             count: "#count"
         },
 
@@ -34,18 +32,6 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 
 		/* Ui events hash */
 		events: {
-            "click #enter": "onPost",
-            "keypress #input": "onPost"
-        },
-        onPost: function(e){
-            if(e.keypress === 13){return;}
-            var talk = this.ui.input.val();
-            if(talk === ''){return;} // ''
-            console.log(talk);
-            this.collection.add({talk: talk});
-            Communicator.command.execute("TALK:EMIT",talk); // 投稿送信
-            this.ui.input.val("");
-            console.log("talk:toServer");
         },
         countRender: function(count) {
             console.log(count+"人");
