@@ -2,6 +2,7 @@
 
 #talk {
   text-decoration: none;
+  margin: 0;
 }
 #inputarea {
   bottom: 0;
@@ -46,6 +47,7 @@
 .marquee{
   list-style: none;
   overflow:hidden;
+  margin: 0;
 }
 .marquee li{
   width:100%;
@@ -55,7 +57,7 @@
 
   -moz-animation-duration: 20s;
   -moz-animation-name: marquee;
-  -moz-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: 1;
   -moz-animation-timing-function: linear;
 
   -webkit-animation-duration: 20s;
