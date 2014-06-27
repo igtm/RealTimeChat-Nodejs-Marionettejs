@@ -44,8 +44,6 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
             console.log(talk);
             this.collection.add({talk: talk});
             console.log("talkRender");
-
-            $("#talk").marquee({pauseOnHover:false,scrollSpeed:24});
         },
 		/* on render callback */
 		onRender: function() {}

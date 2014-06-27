@@ -42,21 +42,50 @@
 #audience li:last-child {
   border-bottom: 0px;
 }
-// marquee chromeで使えないから保留 //
-ul.marquee{
-  display:block;
-  padding:0;
-  margin:0;
-  list-style:none;
-  line-height:1;
-  position:relative;
+// marquee 保留 //
+.marquee{
+  list-style: none;
   overflow:hidden;
 }
-
-ul.marquee li{
-  position:absolute;
-  top:-999em;
-  left:0;
-  display:block;
+.marquee li{
+  width:100%;
+  text-align:center;
+  display:inline-block;
   white-space:nowrap;
+
+  -moz-animation-duration: 20s;
+  -moz-animation-name: marquee;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  -webkit-animation-duration: 20s;
+  -webkit-animation-name: marquee;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -ms-animation-duration: 20s;
+  -ms-animation-name: marquee;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  -o-animation-duration: 20s;
+  -o-animation-name: marquee;
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+}
+@-webkit-keyframes marquee {
+  from {margin-left: 100%; width: 100%; }
+  to { margin-left: -100%; width: 100%; }
+}
+@-moz-keyframes marquee {
+  from {margin-left: 100%; width: 100%; }
+  to { margin-left: -100%; width: 100%; }
+}
+@-ms-keyframes marquee {
+  from {margin-left: 100%; width: 100%; }
+  to { margin-left: -100%; width: 100%; }
+}
+@-o-keyframes marquee {
+  from {margin-left: 100%; width: 100%; }
+  to { margin-left: -100%; width: 100%; }
 }
