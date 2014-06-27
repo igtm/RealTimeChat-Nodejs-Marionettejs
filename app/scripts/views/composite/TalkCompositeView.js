@@ -17,7 +17,6 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 			console.log("initialize a Talkcompositeview CompositeView");
             Communicator.command.setHandler("COUNT:RENDER",this.countRender,this);
             Communicator.command.setHandler("TALK:RENDER",this.talkRender,this);
-            $("#talk").marquee({pauseOnHover:false,scrollSpeed:24});
 
         },
 		
@@ -45,6 +44,8 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
             console.log(talk);
             this.collection.add({talk: talk});
             console.log("talkRender");
+
+            $("#talk").marquee({pauseOnHover:false,scrollSpeed:24});
         },
 		/* on render callback */
 		onRender: function() {}
