@@ -3,9 +3,10 @@ define([
 	'views/item/TalkItemView',
 	'hbs!tmpl/composite/TalkCompositeView_tmpl',
     'models/TalkModel',
-    'communicator'
+    'communicator',
+    'jquery'
 ],
-function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator  ) {
+function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator, $  ) {
     'use strict';
 
 	/* Return a CompositeView class definition */
@@ -15,6 +16,8 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 			console.log("initialize a Talkcompositeview CompositeView");
             Communicator.command.setHandler("COUNT:RENDER",this.countRender,this);
             Communicator.command.setHandler("TALK:RENDER",this.talkRender,this);
+            $("#talk").marquee({pauseOnHover:false,scrollSpeed:24});
+
         },
 		
     	itemView: Talkitemview,

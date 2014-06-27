@@ -43,9 +43,20 @@
   border-bottom: 0px;
 }
 // marquee chromeで使えないから保留 //
-.marquee {
-  overflow:-webkit-marquee;
+ul.marquee{
+  display:block;
+  padding:0;
+  margin:0;
+  list-style:none;
+  line-height:1;
+  position:relative;
+  overflow:hidden;
+}
+
+ul.marquee li{
+  position:absolute;
+  top:-999em;
+  left:0;
+  display:block;
   white-space:nowrap;
-  -webkit-marquee-speed:slow;
-  -webkit-marquee-repetition: 1;
 }
