@@ -4,7 +4,8 @@ define([
 	'hbs!tmpl/composite/TalkCompositeView_tmpl',
     'models/TalkModel',
     'communicator',
-    'jquery'
+    'jquery',
+    'jquery.marquee'
 ],
 function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator, $  ) {
     'use strict';
