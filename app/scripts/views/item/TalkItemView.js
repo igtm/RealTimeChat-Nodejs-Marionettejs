@@ -16,6 +16,8 @@ function( Backbone, TalkitemviewTmpl  ) {
 
         tagName: "li",
 
+        className: "talk",
+
         attributes: {
             "draggable": true
         },
@@ -28,7 +30,6 @@ function( Backbone, TalkitemviewTmpl  ) {
 		/* Ui events hash */
 		events: {
         },
-
 		/* on render callback */
 		onRender: function() {}
 	});

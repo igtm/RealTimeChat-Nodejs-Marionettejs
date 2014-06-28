@@ -35,6 +35,9 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 
 		/* Ui events hash */
 		events: {
+            "ondragstart .talk":"onDragStart",
+            "ondragover #drop":"onDragOver",
+            "ondrop #drop":"onDrop"
         },
         countRender: function(count) {
             console.log(count+"人");
@@ -44,6 +47,27 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
             console.log(talk);
             this.collection.add({talk: talk});
             console.log("talkRender");
+        },
+        onDragStart: function(e){
+            //ドラッグするデータのid名をDataTransferオブジェクトにセット
+            e.dataTransfer.setData("text", $(this).val());
+            console.log("onDragStart:"+$(this).val());
+        },
+        onDragOver: function(e) {
+            //自分でドロップ処理を行うため、
+            //イベントをキャンセルし既定の処理をスキップする
+            e.preventDefault();
+            console.log("onDragOver");
+        },
+
+        onDrop: function(e) {
+            console.log("onDrop:"+$(this).text());
+            var text = e.dataTransfer.getData("text");
+            $(this).text(text);
+
+            //自分でドロップ処理を行い、ドロップ処理が完結しているので、
+            //イベントをキャンセルし既定の処理をスキップする
+            e.preventDefault();
         },
 		/* on render callback */
 		onRender: function() {}
