@@ -16,6 +16,10 @@ function( Backbone, TalkitemviewTmpl  ) {
 
         tagName: "li",
 
+        attributes: {
+            "draggable": true
+        },
+
 
     	/* ui selector cache */
     	ui: {
