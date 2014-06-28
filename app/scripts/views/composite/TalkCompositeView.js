@@ -58,7 +58,6 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
         onDragOver: function(e) {
             //自分でドロップ処理を行うため、
             //イベントをキャンセルし既定の処理をスキップする
-            console.log(e);
             e.preventDefault();
             console.log("onDragOver");
         },
@@ -66,7 +65,7 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
         onDrop: function(e) {
             e.dataTransfer = e.originalEvent.dataTransfer;
             var talk = e.dataTransfer.getData("text");
-            $(this).text(talk);
+            $("#drop").text(talk);
 
             //自分でドロップ処理を行い、ドロップ処理が完結しているので、
             //イベントをキャンセルし既定の処理をスキップする
