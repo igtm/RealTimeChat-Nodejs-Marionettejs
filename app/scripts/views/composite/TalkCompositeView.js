@@ -49,7 +49,6 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
             console.log("talkRender");
         },
         onDragStart: function(e){
-            //ドラッグするデータのid名をDataTransferオブジェクトにセット
             e.dataTransfer = e.originalEvent.dataTransfer;
             var talk = $("#"+e.target.id).text();
             console.log("talk:"+talk);
@@ -59,16 +58,12 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
             //自分でドロップ処理を行うため、
             //イベントをキャンセルし既定の処理をスキップする
             e.preventDefault();
-            console.log("onDragOver");
         },
 
         onDrop: function(e) {
             e.dataTransfer = e.originalEvent.dataTransfer;
             var talk = e.dataTransfer.getData("text");
             $("#drop").text(talk);
-
-            //自分でドロップ処理を行い、ドロップ処理が完結しているので、
-            //イベントをキャンセルし既定の処理をスキップする
             e.preventDefault();
         },
 		/* on render callback */
