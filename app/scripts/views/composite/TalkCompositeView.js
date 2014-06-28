@@ -50,9 +50,10 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
         },
         onDragStart: function(e){
             //ドラッグするデータのid名をDataTransferオブジェクトにセット
-            e.dataTransfer.setData("text", $(this).val());
+
             console.log(e.dataTransfer);
             console.log("onDragStart:"+$(this).val());
+            e.dataTransfer.setData("text", $(this).val());
         },
         onDragOver: function(e) {
             //自分でドロップ処理を行うため、
