@@ -35,9 +35,9 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 
 		/* Ui events hash */
 		events: {
-            "ondragstart .talk":"onDragStart",
-            "ondragover #drop":"onDragOver",
-            "ondrop #drop":"onDrop"
+            "dragstart .talk":"onDragStart",
+            "dragover #drop":"onDragOver",
+            "drop #drop":"onDrop"
         },
         countRender: function(count) {
             console.log(count+"人");
