@@ -43,7 +43,19 @@
 #audience li:last-child {
   border-bottom: 0px;
 }
-// marquee 保留 //
+// dropArea //
+#drop {
+  bottom: 0;
+  z-index: 10;
+  line-height: 2;
+  position: absolute;
+  width: 100%;
+  border: solid 5px rgb(202, 202, 202);
+}
+
+
+
+// marquee //
 .marquee{
   list-style: none;
   overflow:hidden;
