@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="356e7add-6bd0-4dd7-bed6-b01263e464e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/composite/TalkCompositeView_tmpl.hbs" afterPath="$PROJECT_DIR$/app/templates/composite/TalkCompositeView_tmpl.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/composite/HomeCompositeView_tmpl.hbs" afterPath="$PROJECT_DIR$/app/templates/composite/HomeCompositeView_tmpl.hbs" />
     </list>
     <ignored path="sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TalkCompositeView_tmpl.hbs" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/templates/composite/TalkCompositeView_tmpl.hbs">
+      <file leaf-file-name="HomeCompositeView_tmpl.hbs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/templates/composite/HomeCompositeView_tmpl.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06465517" vertical-offset="0" max-vertical-offset="696">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AudienceCompositeView_tmpl.hbs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/composite/AudienceCompositeView_tmpl.hbs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.38793105" vertical-offset="0" max-vertical-offset="696">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -115,10 +105,10 @@
         <option value="$PROJECT_DIR$/app/scripts/views/composite/TalkCompositeView.js" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
         <option value="$PROJECT_DIR$/app/scripts/views/composite/AudienceCompositeView.js" />
-        <option value="$PROJECT_DIR$/app/templates/composite/HomeCompositeView_tmpl.hbs" />
         <option value="$PROJECT_DIR$/app/scripts/application.js" />
         <option value="$PROJECT_DIR$/app/templates/composite/AudienceCompositeView_tmpl.hbs" />
         <option value="$PROJECT_DIR$/app/templates/composite/TalkCompositeView_tmpl.hbs" />
+        <option value="$PROJECT_DIR$/app/templates/composite/HomeCompositeView_tmpl.hbs" />
       </list>
     </option>
   </component>
@@ -808,14 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/composite/HomeCompositeView_tmpl.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0862069" vertical-offset="0" max-vertical-offset="696">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/routers/Router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22916667" vertical-offset="0" max-vertical-offset="720">
@@ -836,14 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.714286" vertical-offset="319" max-vertical-offset="1665">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -876,6 +850,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06465517" vertical-offset="0" max-vertical-offset="696">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.714286" vertical-offset="319" max-vertical-offset="1665">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/composite/HomeCompositeView_tmpl.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38793105" vertical-offset="0" max-vertical-offset="696">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
           <folding />
         </state>
       </provider>
