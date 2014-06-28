@@ -23,8 +23,7 @@ function( Backbone, Communicator, TalkCompositeView, TalkCollection,Controller,R
         var func = function(view){App.container.show(view);}
         Communicator.command.setHandler("SET:VIEW",func,this);
 
-        new Router({controller: new Controller()});
-        Backbone.history.start();
+
 
         /* socket.io  */
         var s = io.connect();
@@ -39,6 +38,8 @@ function( Backbone, Communicator, TalkCompositeView, TalkCollection,Controller,R
             s.emit("talk:toServer",{talk: talk});
         },this);
 
+        new Router({controller: new Controller()});
+        Backbone.history.start();
 	});
 
 	return App;
