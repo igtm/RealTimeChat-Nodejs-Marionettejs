@@ -18,6 +18,10 @@ function( Backbone, TalkitemviewTmpl  ) {
 
         className: "talk",
 
+        id: function(){
+            return _.uniqueId("talk");
+        },
+
         attributes: {
             "draggable": true
         },
