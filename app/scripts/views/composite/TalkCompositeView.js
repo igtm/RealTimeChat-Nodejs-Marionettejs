@@ -64,9 +64,9 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
         },
 
         onDrop: function(e) {
-            console.log("onDrop:"+$(this).text());
-            var text = e.dataTransfer.getData("text");
-            $(this).text(text);
+            e.dataTransfer = e.originalEvent.dataTransfer;
+            var talk = e.dataTransfer.getData("text");
+            $(this).text(talk);
 
             //自分でドロップ処理を行い、ドロップ処理が完結しているので、
             //イベントをキャンセルし既定の処理をスキップする
