@@ -15,6 +15,7 @@ function( Backbone, Talkitemview, TalkcompositeviewTmpl, TalkModel, Communicator
 
 		initialize: function() {
 			console.log("initialize a Talkcompositeview CompositeView");
+            this.bindUIElements();
             Communicator.command.setHandler("COUNT:RENDER",this.countRender,this);
             Communicator.command.setHandler("TALK:RENDER",this.talkRender,this);
 
