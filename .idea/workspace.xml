@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="356e7add-6bd0-4dd7-bed6-b01263e464e1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/composite/AudienceCompositeView_tmpl.hbs" afterPath="$PROJECT_DIR$/app/templates/composite/AudienceCompositeView_tmpl.hbs" />
-    </list>
+    <list default="true" id="356e7add-6bd0-4dd7-bed6-b01263e464e1" name="Default" comment="" />
     <ignored path="sample.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,20 +33,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudienceCompositeView.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AudienceCompositeView.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/views/composite/AudienceCompositeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="870">
+            <state vertical-scroll-proportion="0.5" vertical-offset="135" max-vertical-offset="855">
               <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AudienceCompositeView_tmpl.hbs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AudienceCompositeView_tmpl.hbs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/composite/AudienceCompositeView_tmpl.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06465517" vertical-offset="0" max-vertical-offset="696">
+            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="165">
               <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
               <folding />
             </state>
@@ -87,8 +85,8 @@
         <option value="$PROJECT_DIR$/app/scripts/views/item/TalkItemView.js" />
         <option value="$PROJECT_DIR$/app/scripts/views/composite/TalkCompositeView.js" />
         <option value="$PROJECT_DIR$/app/styles/main.scss" />
-        <option value="$PROJECT_DIR$/app/scripts/views/composite/AudienceCompositeView.js" />
         <option value="$PROJECT_DIR$/app/templates/composite/AudienceCompositeView_tmpl.hbs" />
+        <option value="$PROJECT_DIR$/app/scripts/views/composite/AudienceCompositeView.js" />
       </list>
     </option>
   </component>
@@ -837,18 +835,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/views/composite/AudienceCompositeView.js">
+    <entry file="file://$PROJECT_DIR$/app/templates/composite/AudienceCompositeView_tmpl.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="870">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="165">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/composite/AudienceCompositeView_tmpl.hbs">
+    <entry file="file://$PROJECT_DIR$/app/scripts/views/composite/AudienceCompositeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06465517" vertical-offset="0" max-vertical-offset="696">
-          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.5" vertical-offset="135" max-vertical-offset="855">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
           <folding />
         </state>
       </provider>
